@@ -1,0 +1,11 @@
+name: Hello Workflow        # Name of the workflow
+
+on: [push]                  # Trigger: runs on every push
+
+jobs:                       # All workflows have one or more jobs
+  say-hello:
+    runs-on: ubuntu-latest  # Job runs on a virtual Linux machine
+
+    steps:                  # Steps to execute
+      - name: Say Hello     # Name of the step
+        run: echo "Hello"   # Command to run
