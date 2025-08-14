@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Print secret (safe version)
-        run: echo "I loaded the secret successfully!"
+      - name: Validate secret
+        run: |
+          if [ -z "$SECRET_VALUE" ]; then
+            echo "❌ Secret is NOT set or named incorrectly!"
+            exit 1
+          else
+            echo "✅ Secret is set correctly."
+          fi
         env:
-          SECRET_VALUE: ${{ secrets.FIRST_NAM1}}
+          SECRET_VALUE: ${{ secrets.FIRST_NAME }}
