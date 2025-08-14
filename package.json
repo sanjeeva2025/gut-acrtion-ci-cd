@@ -17,4 +17,9 @@
   },
   "homepage": "https://github.com/sanjeeva2025/gut-acrtion-ci-cd#readme",
   "description": ""
+
+  "scripts": {
+  "test": "echo \"No tests yet\""
+  }
+
 }
