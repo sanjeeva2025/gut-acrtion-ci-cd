@@ -16,4 +16,4 @@ jobs:
             echo "✅ Secret is set correctly."
           fi
         env:
-          SECRET_VALUE: ${{ secrets.FIRST_NAME }}
+          SECRET_VALUE: ${{ secrets.FIRST_NAME1 }}
