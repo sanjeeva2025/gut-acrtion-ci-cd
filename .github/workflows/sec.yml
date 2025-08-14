@@ -13,4 +13,4 @@ jobs:
       - name: Print secret (safe version)
         run: echo "I loaded the secret successfully!"
         env:
-          SECRET_VALUE: ${{ secrets.FIRST_NAME }}
+          SECRET_VALUE: ${{ secrets.FIRST_NAM1}}
