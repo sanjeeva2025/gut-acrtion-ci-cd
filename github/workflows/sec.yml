@@ -1,3 +1,7 @@
+name: Demo Workflow
+
+on: [push]
+
 jobs:
   demo:
     runs-on: ubuntu-latest
@@ -7,6 +11,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print secret (safe version)
-        run: echo "I loaded the secret successfully!"
-        env:
-          SECRET_VALUE: ${{ secrets.FIRST_NAME }}
+        run: echo "I loaded the secret
