@@ -10,6 +10,6 @@
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Actions secrets and variables
-        run: echo "MY_SECRET_KEY=${{ secrets.FIRST_NAME }}"
+      - name: Print secret value
+        run: echo "MY_SECRET_KEY=${{ secrets.FIRST_NAME }}" 
 
